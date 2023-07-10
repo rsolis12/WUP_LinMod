@@ -102,13 +102,24 @@ mygrip
 ```
 
 ### Numerical results 
-
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+The numerical results for SIMS~Grip is .6398458. SIMS~ARm has a higher,
 
 
 ### Inferential  (Build model.2)
-  
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+```  
+The residual standard error 1.295 and the R squared is 0.4094 SIMS~ARM has a better standard error and a better R squared number then SIMS`GRIp
 
 #### predict model.2 at target point
+```{r}
+predict.lm(model.2, mydata, interval = "prediction")
+```
+The interval goes from -3.38434 to positive 1.766475.
 
 #### now add the model fit to our plot for model.2
   
