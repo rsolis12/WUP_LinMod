@@ -155,7 +155,7 @@ The correlation lis larger than SIMS~GRIP. WITH All tree together they are large
 model.3 <- lm(SIMS~ARM + GRIP,data=data)
 summary.lm(model.3)
 ```  
-
+This model has a residual error of 1.144 and a R squared of .5422, this model has a better residual error SIMS~GRIP and SIMS~ARM. The models SIMS = .37311 * ARM + 2.4470 * GRIP - 5.433871
 
 #### predict model.3 at target point
   
