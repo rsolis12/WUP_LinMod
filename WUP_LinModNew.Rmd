@@ -122,7 +122,16 @@ predict.lm(model.2, mydata, interval = "prediction")
 The interval goes from -3.38434 to positive 1.766475.
 
 #### now add the model fit to our plot for model.2
-  
+```{r}
+mygrip <- ggplot(data, aes(y = SIMS, x = GRIP)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(title = "SIMS ~ GRIP") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+mygrip
+
+```  
 
 
 ## Model 3 SIM~ARM+GRIP
