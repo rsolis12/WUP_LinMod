@@ -174,11 +174,16 @@ anova(model.1, model.3)
 It provides a p- value of 00000499, which does not have any value.
 
 ```{r}
-anova(model.1)
+anova(model.2, model.3)
 ```
+The p value is alot smalller then model.1, model.3 there is a big difference between the data models. model 3 is better than model 1 and model 3 is better then model 2. This is based on the p value shown.
 
 
-### Model.2 vs Model.3
+### Model.1 vs Model.2
+```{r}
+anova(model.1, model.2)
+```
+We reduced the sum of squared errors between these two models, that does not show its P values.
 
 ## Informally compare Model.1 with model.2
 
