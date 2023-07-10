@@ -148,9 +148,14 @@ mygrip
 ```{r}
 cor(SIMS~ARM + GRIP,data=data)
 ```
-The corralatins lis larger than SIMS~GRIP. WITH All tree together they are larger than .732
+The correlation lis larger than SIMS~GRIP. WITH All tree together they are larger than .732
   
 ### Inferential  (Build 2-dimentional model.3)
+```{r}
+model.3 <- lm(SIMS~ARM + GRIP,data=data)
+summary.lm(model.3)
+```  
+
 
 #### predict model.3 at target point
   
