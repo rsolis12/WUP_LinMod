@@ -64,11 +64,12 @@ The residual standard error is 1.226, the R squared is 0.4706. The comparison be
 #### Predict at target point
 
 ```{r}
-mydata <-data.frame(GRIP)
+mydata <-data.frame(GRIP=88,ARM=104)
+predict.lm(model.1, mydata, interval = "prediction")
 ```
 
 
-
+The value that is predicted is 1.57 in change and the interval was a positive 4.02 on change.
 #### scatterplot with model fit
   
 
