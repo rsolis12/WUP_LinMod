@@ -158,11 +158,26 @@ summary.lm(model.3)
 This model has a residual error of 1.144 and a R squared of .5422, this model has a better residual error SIMS~GRIP and SIMS~ARM. The models SIMS = .37311 * ARM + 2.4470 * GRIP - 5.433871
 
 #### predict model.3 at target point
-  
+```{r}
+predict.lm(model.3, mydata, interval = "prediction")
+```  
+The interval  goes from negative 1.716184 to positive 2.915777
 
 ## Comparing nested models ANOVA Test
 
+
 ### Model.1 vs Model.3
+
+```{r}
+anova(model.1, model.3)
+```
+It provides a p- value of 00000499, which does not have any value.
+
+```{r}
+anova(model.1)
+```
+
+
 ### Model.2 vs Model.3
 
 ## Informally compare Model.1 with model.2
