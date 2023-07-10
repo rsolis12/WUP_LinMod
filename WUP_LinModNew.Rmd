@@ -33,9 +33,23 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ## Model 1 SIM~ARMS
 
+
+  
+
+
 ### scatterplot
 
+```{r}
+basicNN <- ggplot(data, aes(y = SIMS, x = ARM)) +
+  geom_point() +
+  labs(title = "SIMS and ARM") +
+  theme(plot.title = element_text(hjust = 0.5))
+
+basicNN
+```
+
 ### Numerical results
+
 
 
 ### Inferential  (Build model.1)
