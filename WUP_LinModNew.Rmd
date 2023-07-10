@@ -55,8 +55,18 @@ cor(SIMS~ARM,data=data)
 The numerical results for SIMS~AmRs is .6860073 this means the relationship between the two is fair in strength. 
 
 ### Inferential  (Build model.1)
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+The residual standard error is 1.226, the R squared is 0.4706. The comparison between the two that we always look at are the adjusted R quared. As we put our data in the R squared goes up.
 
 #### Predict at target point
+
+```{r}
+mydata <-data.frame(GRIP)
+```
+
 
 
 #### scatterplot with model fit
